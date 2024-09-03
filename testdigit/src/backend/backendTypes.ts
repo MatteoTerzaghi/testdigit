@@ -35,3 +35,9 @@ export interface BaseResponse {
   error?: ResponseError;
   status: ServerStatus;
 }
+
+export interface SimpleResponse extends BaseResponse {
+  result: boolean;
+}
+
+export type GetLoginResponse = SimpleResponse;
